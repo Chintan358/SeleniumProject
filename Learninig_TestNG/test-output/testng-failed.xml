@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite parallel="none" name="Failed suite [Suite]">
+  <listeners>
+    <listener class-name="listener.Fb_Test_listener"/>
+  </listeners>
+  <test parallel="none" name="Test(failed)">
+    <classes>
+      <class name="listener.Fb_Test">
+        <methods>
+          <include name="logincheck" invocation-numbers="0"/>
+          <include name="titleCheck" invocation-numbers="0"/>
+        </methods>
+      </class> <!-- listener.Fb_Test -->
+    </classes>
+  </test> <!-- Test(failed) -->
+</suite> <!-- Failed suite [Suite] -->

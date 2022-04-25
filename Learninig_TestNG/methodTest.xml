@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Suite">
+  <test name="Test1">
+    <classes>
+      <class name="methodtest.Bank"/>
+      <class name="methodtest.MainFunc">
+      <methods>
+      <exclude name="logout"></exclude>
+      </methods>
+      </class>
+    </classes>
+  </test> <!-- Test -->
+  
+  
+  <test name="Test2">
+    <classes>
+      <class name="methodtest.Bank">
+      <methods>
+      <include name="saving"></include>
+      </methods>
+      </class>
+    </classes>
+  </test> 
+</suite> <!-- Suite -->
